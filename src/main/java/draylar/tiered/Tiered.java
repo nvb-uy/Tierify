@@ -7,6 +7,7 @@ import draylar.tiered.data.AttributeDataLoader;
 import draylar.tiered.data.ReforgeDataLoader;
 import draylar.tiered.network.TieredServerPacket;
 import draylar.tiered.reforge.ReforgeScreenHandler;
+import draylar.tiered.registry.ItemRegistry;
 import io.netty.buffer.Unpooled;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
@@ -78,6 +79,7 @@ public class Tiered implements ModInitializer {
     public void onInitialize() {
         ConfigInit.init();
         TieredItemTags.init();
+        ItemRegistry.init();
         CustomEntityAttributes.init();
         CommandInit.init();
         registerAttributeSyncer();

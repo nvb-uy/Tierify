@@ -265,6 +265,9 @@
   "commands.tiered.untier_failed": "Nothing changed. %s from %s has no tier",
   "commands.tiered.untier": "Untiered %s from %s",
   "commands.tiered.tiering_failed": "Nothing changed. %s from %s has no given tier",
-  "commands.tiered.tier": "Tiered %s from %s"
+  "commands.tiered.tier": "Tiered %s from %s",
 
+  "item.tiered.limestone_chunk": "Limestone Chunk",
+  "item.tiered.pyrite": "Pyrite",
+  "item.tiered.galena": "Galena"
 }

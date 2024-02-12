@@ -47,7 +47,7 @@ public class ReforgeScreenHandler extends ScreenHandler {
         this.addSlot(new Slot(this.inventory, 2, 115, 47) {
             @Override
             public boolean canInsert(ItemStack stack) {
-                return stack.isIn(TieredItemTags.REFORGE_ADDITION);
+                return isValidAddition(stack);
             }
         });
 
@@ -133,7 +133,7 @@ public class ReforgeScreenHandler extends ScreenHandler {
                     return ItemStack.EMPTY;
                 }
             } else if (index >= 3 && index < 39) {
-                if (itemStack.isIn(TieredItemTags.REFORGE_ADDITION) && !this.insertItem(itemStack2, 2, 3, false)) {
+                if (isValidAddition(itemStack) && !this.insertItem(itemStack2, 2, 3, false)) {
                     return ItemStack.EMPTY;
                 }
                 if (this.getSlot(1).hasStack()) {
@@ -199,4 +199,7 @@ public class ReforgeScreenHandler extends ScreenHandler {
         return slot.inventory != this.inventory && super.canInsertIntoSlot(stack, slot);
     }
 
+    public static boolean isValidAddition(ItemStack stack) {
+        return stack.isIn(TieredItemTags.TIER_1_ITEM) || stack.isIn(TieredItemTags.TIER_2_ITEM) || stack.isIn(TieredItemTags.TIER_3_ITEM);
+    }
 }

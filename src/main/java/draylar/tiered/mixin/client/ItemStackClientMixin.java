@@ -6,6 +6,8 @@ import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 
 import draylar.tiered.Tiered;
 import draylar.tiered.api.PotentialAttribute;
+import draylar.tiered.config.ConfigInit;
+import draylar.tiered.config.TieredConfig;
 import draylar.tiered.util.TieredTooltip;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -198,8 +200,10 @@ public abstract class ItemStackClientMixin {
             if (potentialAttribute != null) {
                 MutableText text = Text.translatable(potentialAttribute.getID() + ".label");
 
-                text = Text.literal(TieredTooltip.getPlateForModifier(text.getString()));
-                
+                if (ConfigInit.CLIENT_CONFIG.showPlatesOnName) {
+                    text = Text.literal(TieredTooltip.getPlateForModifier(text.getString()));
+                }
+
                 info.setReturnValue(text.append(" ").append(info.getReturnValue()).setStyle(potentialAttribute.getStyle()));
             }
         }

@@ -16,6 +16,7 @@ repositories {
 	maven { url "https://cursemaven.com" }
 	maven { url "https://maven.willbl.dev/releases" }
 	maven { url "https://server.bbkr.space/artifactory/libs-release" }
+	maven { url "https://api.modrinth.com/maven" }
 }
 
 dependencies {
@@ -26,6 +27,10 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	// Necronomicon
+	modImplementation "maven.modrinth:necronomicon:${project.necronomicon_version}-fabric"
+	
 
 	// ModMenu
     modCompileOnly modRuntimeOnly("com.terraformersmc:modmenu:${project.mod_menu_version}") {

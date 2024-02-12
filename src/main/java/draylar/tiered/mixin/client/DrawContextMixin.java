@@ -37,7 +37,7 @@ public class DrawContextMixin {
     @Inject(method = "drawItemTooltip", at = @At("HEAD"), cancellable = true)
     private void drawItemTooltipMixin(TextRenderer textRenderer, ItemStack stack, int x, int y, CallbackInfo info) {
 
-        if (ConfigInit.CONFIG.tieredTooltip && stack.hasNbt() && stack.getNbt().contains("Tiered")) {
+        if (ConfigInit.CLIENT_CONFIG.tieredTooltip && stack.hasNbt() && stack.getNbt().contains("Tiered")) {
             String nbtString = stack.getNbt().getCompound("Tiered").asString();
             for (int i = 0; i < TieredClient.BORDER_TEMPLATES.size(); i++) {
                 if (!TieredClient.BORDER_TEMPLATES.get(i).containsStack(stack) && TieredClient.BORDER_TEMPLATES.get(i).containsDecider(nbtString)) {

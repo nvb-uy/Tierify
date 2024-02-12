@@ -221,8 +221,8 @@
   "tiered:legendary.label": "Legendary",
   "tiered:mythic.label": "Mythic",
 
-  "text.autoconfig.tiered.title": "Tiered Config",
-  "text.autoconfig.tiered.category.default": "Tiered Settings",
+  "text.autoconfig.tiered.title": "Tierify Config",
+  "text.autoconfig.tiered.category.default": "Tierify Settings",
   "text.autoconfig.tiered.category.client_settings": "Client Settings",
   "text.autoconfig.tiered.option.lootContainerModifier": "Loot Container Modifier",
   "text.autoconfig.tiered.option.entityItemModifier": "Entity Item Modifier",
@@ -236,6 +236,7 @@
   "text.autoconfig.tiered.option.xIconPosition": "Icon X Position",
   "text.autoconfig.tiered.option.yIconPosition": "Icon Y Position",
   "text.autoconfig.tiered.option.tieredTooltip": "Tiered Tooltip",
+  "text.autoconfig.tiered.option.showPlatesOnName": "Show Plates on Name",
   "text.autoconfig.tiered.option.centerName": "Center Name",
 
   "container.reforge": "Reforge Gear",

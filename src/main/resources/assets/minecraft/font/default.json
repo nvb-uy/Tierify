@@ -1,0 +1,40 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "tiered:plates/common.png",
+            "ascent": 9, "height": 10,
+            "chars": ["\uFFA1"]
+        },
+        {
+            "type": "bitmap",
+            "file": "tiered:plates/uncommon.png",
+            "ascent": 9, "height": 10,
+            "chars": ["\uFFA2"]
+        },
+        {
+            "type": "bitmap",
+            "file": "tiered:plates/rare.png",
+            "ascent": 9, "height": 10,
+            "chars": ["\uFFA3"]
+        },
+        {
+            "type": "bitmap",
+            "file": "tiered:plates/epic.png",
+            "ascent": 9, "height": 10,
+            "chars": ["\uFFA4"]
+        },
+        {
+            "type": "bitmap",
+            "file": "tiered:plates/legendary.png",
+            "ascent": 9, "height": 10,
+            "chars": ["\uFFA5"]
+        }, 
+        {
+            "type": "bitmap",
+            "file": "tiered:plates/mythic.png",
+            "ascent": 9, "height": 10,
+            "chars": ["\uFFA6"]
+        }
+    ]
+}

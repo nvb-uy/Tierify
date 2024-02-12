@@ -14,7 +14,7 @@
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/tierify"
   },
   "license": "MIT",
-  "icon": "assets/tierify/icon.png",
+  "icon": "assets/tiered/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

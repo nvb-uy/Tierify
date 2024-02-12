@@ -2,7 +2,8 @@ package draylar.tiered.api;
 
 import com.google.common.collect.Multimap;
 import com.google.gson.annotations.SerializedName;
-import draylar.tiered.Tiered;
+
+import elocindev.tierify.Tierify;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -64,12 +65,12 @@ public class AttributeTemplate {
      * @param slot
      */
     public void realize(Multimap<EntityAttribute, EntityAttributeModifier> multimap, EquipmentSlot slot) {
-        EntityAttributeModifier cloneModifier = new EntityAttributeModifier(Tiered.MODIFIERS[slot.getArmorStandSlotId()], entityAttributeModifier.getName() + "_" + slot.getName(),
+        EntityAttributeModifier cloneModifier = new EntityAttributeModifier(Tierify.MODIFIERS[slot.getArmorStandSlotId()], entityAttributeModifier.getName() + "_" + slot.getName(),
                 entityAttributeModifier.getValue(), entityAttributeModifier.getOperation());
 
         EntityAttribute key = Registries.ATTRIBUTE.get(new Identifier(attributeTypeID));
         if (key == null) {
-            Tiered.LOGGER.warn(String.format("%s was referenced as an attribute type, but it does not exist! A data file in /tiered/item_attributes/ has an invalid type property.", attributeTypeID));
+            Tierify.LOGGER.warn(String.format("%s was referenced as an attribute type, but it does not exist! A data file in /tiered/item_attributes/ has an invalid type property.", attributeTypeID));
         } else {
             multimap.put(key, cloneModifier);
         }

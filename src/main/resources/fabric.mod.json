@@ -18,13 +18,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "draylar.tiered.Tiered"
+      "elocindev.tierify.Tierify"
     ],
     "client": [
-      "draylar.tiered.TieredClient"
+      "elocindev.tierify.TierifyClient"
     ],
     "modmenu": [
-      "draylar.tiered.config.ModMenuIntegration"
+      "elocindev.tierify.config.ModMenuIntegration"
     ]
   },
   "mixins": [

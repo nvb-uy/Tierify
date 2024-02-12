@@ -1,6 +1,6 @@
 package draylar.tiered.api;
 
-import draylar.tiered.Tiered;
+import elocindev.tierify.Tierify;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -48,7 +48,7 @@ public class ItemVerifier {
             if (itemTag != null) {
                 return new ItemStack(Registries.ITEM.get(new Identifier(itemID))).isIn(itemTag);// itemTag.contains(Registry.ITEM.get(new Identifier(itemID)));
             } else {
-                Tiered.LOGGER.error(tag + " was specified as an item verifier tag, but it does not exist!");
+                Tierify.LOGGER.error(tag + " was specified as an item verifier tag, but it does not exist!");
             }
         }
 

@@ -1,8 +1,8 @@
 {
   "required": true,
-  "package": "draylar.tiered.mixin",
+  "package": "elocindev.tierify.mixin",
   "compatibilityLevel": "JAVA_17",
-  "plugin": "draylar.tiered.mixin.compat.TieredMixinPlugin",
+  "plugin": "elocindev.tierify.mixin.compat.TieredMixinPlugin",
   "mixins": [
     "ItemStackMixin",
     "LivingEntityMixin",

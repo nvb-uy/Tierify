@@ -7,7 +7,7 @@ import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import draylar.tiered.Tiered;
 import draylar.tiered.api.PotentialAttribute;
 import draylar.tiered.config.ConfigInit;
-import draylar.tiered.config.TieredConfig;
+import draylar.tiered.config.ClientConfig;
 import draylar.tiered.util.TieredTooltip;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

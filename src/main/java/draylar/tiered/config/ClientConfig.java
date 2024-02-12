@@ -7,7 +7,7 @@ import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
 @Config(name = "tierify-client")
 @Config.Gui.Background("minecraft:textures/block/stone.png")
-public class TieredConfig implements ConfigData {
+public class ClientConfig implements ConfigData {
     @Comment("Whether or not to show the reforging tab in the anvil screen.")
     @ConfigEntry.Category("client_settings")
     public boolean showReforgingTab = true;

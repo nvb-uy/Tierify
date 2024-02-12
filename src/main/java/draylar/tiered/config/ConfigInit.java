@@ -6,14 +6,14 @@ import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 
 public class ConfigInit {
     public static CommonConfig CONFIG = new CommonConfig();
-    public static TieredConfig CLIENT_CONFIG = new TieredConfig();
+    public static ClientConfig CLIENT_CONFIG = new ClientConfig();
 
     public static void init() {
-        AutoConfig.register(TieredConfig.class, JanksonConfigSerializer::new);
+        AutoConfig.register(ClientConfig.class, JanksonConfigSerializer::new);
         NecConfigAPI.registerConfig(CommonConfig.class);
 
         CONFIG = CommonConfig.INSTANCE;
-        CLIENT_CONFIG = AutoConfig.getConfigHolder(TieredConfig.class).getConfig();
+        CLIENT_CONFIG = AutoConfig.getConfigHolder(ClientConfig.class).getConfig();
     }
 
 }

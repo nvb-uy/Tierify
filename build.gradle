@@ -41,7 +41,7 @@ dependencies {
     	exclude(group: "net.fabricmc.fabric-api")
   	}
     // LibZ
-    modImplementation ('maven.modrinth:libz:1.0.2+1.20.1') {
+    modImplementation include ('maven.modrinth:libz:1.0.2+1.20.1') {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
 	// Reach Entity Attributes 

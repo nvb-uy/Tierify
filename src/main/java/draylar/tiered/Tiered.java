@@ -1,12 +1,12 @@
 package draylar.tiered;
 
 import draylar.tiered.api.*;
+import draylar.tiered.client.ReforgeScreenHandler;
 import draylar.tiered.command.CommandInit;
 import draylar.tiered.config.ConfigInit;
 import draylar.tiered.data.AttributeDataLoader;
 import draylar.tiered.data.ReforgeDataLoader;
 import draylar.tiered.network.TieredServerPacket;
-import draylar.tiered.reforge.ReforgeScreenHandler;
 import draylar.tiered.registry.ItemRegistry;
 import io.netty.buffer.Unpooled;
 import net.fabricmc.api.EnvType;

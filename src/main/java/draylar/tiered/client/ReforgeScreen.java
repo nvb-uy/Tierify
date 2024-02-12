@@ -1,4 +1,4 @@
-package draylar.tiered.reforge;
+package draylar.tiered.client;
 
 import java.util.*;
 

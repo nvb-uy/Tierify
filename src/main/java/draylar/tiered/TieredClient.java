@@ -2,13 +2,13 @@ package draylar.tiered;
 
 import draylar.tiered.api.BorderTemplate;
 import draylar.tiered.api.PotentialAttribute;
+import draylar.tiered.client.ReforgeScreen;
+import draylar.tiered.client.ReforgeScreenHandler;
+import draylar.tiered.client.widget.AnvilTab;
+import draylar.tiered.client.widget.ReforgeTab;
 import draylar.tiered.data.AttributeDataLoader;
 import draylar.tiered.data.TooltipBorderLoader;
 import draylar.tiered.network.TieredClientPacket;
-import draylar.tiered.reforge.ReforgeScreen;
-import draylar.tiered.reforge.ReforgeScreenHandler;
-import draylar.tiered.reforge.widget.AnvilTab;
-import draylar.tiered.reforge.widget.ReforgeTab;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

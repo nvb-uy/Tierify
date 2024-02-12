@@ -1,4 +1,4 @@
-package draylar.tiered.reforge;
+package draylar.tiered.client;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;

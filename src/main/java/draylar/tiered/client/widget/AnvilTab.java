@@ -1,4 +1,4 @@
-package draylar.tiered.reforge.widget;
+package draylar.tiered.client.widget;
 
 import org.jetbrains.annotations.Nullable;
 

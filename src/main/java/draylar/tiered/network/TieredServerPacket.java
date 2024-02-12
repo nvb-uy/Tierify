@@ -1,7 +1,7 @@
 package draylar.tiered.network;
 
 import draylar.tiered.access.AnvilScreenHandlerAccess;
-import draylar.tiered.reforge.ReforgeScreenHandler;
+import draylar.tiered.client.ReforgeScreenHandler;
 import io.netty.buffer.Unpooled;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.libz.network.LibzServerPacket;

@@ -1,6 +1,6 @@
 package draylar.tiered.network;
 
-import draylar.tiered.reforge.ReforgeScreen;
+import draylar.tiered.client.ReforgeScreen;
 import io.netty.buffer.Unpooled;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

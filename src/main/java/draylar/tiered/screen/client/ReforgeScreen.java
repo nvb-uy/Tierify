@@ -1,13 +1,12 @@
-package draylar.tiered.client;
+package draylar.tiered.screen.client;
 
 import java.util.*;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
 import draylar.tiered.Tiered;
-import draylar.tiered.api.ModifierUtils;
 import draylar.tiered.api.TieredItemTags;
-import draylar.tiered.config.ConfigInit;
+import draylar.tiered.screen.ReforgeScreenHandler;
 import draylar.tiered.network.TieredClientPacket;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

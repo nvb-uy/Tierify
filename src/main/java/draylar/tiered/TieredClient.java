@@ -2,10 +2,10 @@ package draylar.tiered;
 
 import draylar.tiered.api.BorderTemplate;
 import draylar.tiered.api.PotentialAttribute;
-import draylar.tiered.client.ReforgeScreen;
-import draylar.tiered.client.ReforgeScreenHandler;
-import draylar.tiered.client.widget.AnvilTab;
-import draylar.tiered.client.widget.ReforgeTab;
+import draylar.tiered.screen.client.ReforgeScreen;
+import draylar.tiered.screen.ReforgeScreenHandler;
+import draylar.tiered.screen.client.widget.AnvilTab;
+import draylar.tiered.screen.client.widget.ReforgeTab;
 import draylar.tiered.data.AttributeDataLoader;
 import draylar.tiered.data.TooltipBorderLoader;
 import draylar.tiered.network.TieredClientPacket;

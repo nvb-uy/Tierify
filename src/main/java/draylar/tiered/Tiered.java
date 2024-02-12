@@ -1,7 +1,7 @@
 package draylar.tiered;
 
 import draylar.tiered.api.*;
-import draylar.tiered.client.ReforgeScreenHandler;
+import draylar.tiered.screen.ReforgeScreenHandler;
 import draylar.tiered.command.CommandInit;
 import draylar.tiered.config.ConfigInit;
 import draylar.tiered.data.AttributeDataLoader;

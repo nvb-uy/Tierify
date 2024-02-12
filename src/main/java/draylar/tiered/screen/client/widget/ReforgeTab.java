@@ -1,4 +1,4 @@
-package draylar.tiered.client.widget;
+package draylar.tiered.screen.client.widget;
 
 import org.jetbrains.annotations.Nullable;
 

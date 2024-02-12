@@ -1,4 +1,4 @@
-package draylar.tiered.client;
+package draylar.tiered.screen;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;

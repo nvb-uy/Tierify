@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import draylar.tiered.api.ModifierUtils;
-import elocindev.tierify.config.ConfigInit;
+import elocindev.tierify.Tierify;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.decoration.AbstractDecorationEntity;
 import net.minecraft.entity.decoration.ItemFrameEntity;
@@ -22,7 +22,7 @@ public abstract class ItemFrameEntityMixin extends AbstractDecorationEntity {
 
     @Inject(method = "Lnet/minecraft/entity/decoration/ItemFrameEntity;setHeldItemStack(Lnet/minecraft/item/ItemStack;Z)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/decoration/ItemFrameEntity;setAsStackHolder(Lnet/minecraft/item/ItemStack;)V"))
     private void setHeldItemStackMixin(ItemStack value, boolean update, CallbackInfo info) {
-        if (!this.getWorld().isClient() && !update && ConfigInit.CONFIG.lootContainerModifier) {
+        if (!this.getWorld().isClient() && !update && Tierify.CONFIG.lootContainerModifier) {
             ModifierUtils.setItemStackAttribute(null, value, false);
         }
     }

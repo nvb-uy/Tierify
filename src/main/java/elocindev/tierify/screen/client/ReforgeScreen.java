@@ -113,7 +113,7 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> implement
                 context.drawTooltip(this.textRenderer, tooltip, mouseX, mouseY);
             }
         }
-        // if (!ConfigInit.CONFIG.mythicReforge && !this.getScreenHandler().getSlot(1).getStack().isEmpty() && ModifierUtils.getAttributeID(this.getScreenHandler().getSlot(1).getStack()) != null
+        // if (!Tierify.CONFIG.mythicReforge && !this.getScreenHandler().getSlot(1).getStack().isEmpty() && ModifierUtils.getAttributeID(this.getScreenHandler().getSlot(1).getStack()) != null
         //         && ModifierUtils.getAttributeID(this.getScreenHandler().getSlot(1).getStack()).getPath().contains("mythic")) {
         //     context.drawTexture(TEXTURE, this.x + 74, this.y + 29, 0, 166, 28, 26);
         // }

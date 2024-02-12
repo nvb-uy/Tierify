@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import draylar.tiered.api.ModifierUtils;
-import elocindev.tierify.config.ConfigInit;
+import elocindev.tierify.Tierify;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -21,7 +21,7 @@ public class ItemMixin {
     // but is air at onTakeItem in CraftingResultSlot when quick crafting is used
     @Inject(method = "onCraft", at = @At("TAIL"))
     private void onCraftMixin(ItemStack stack, World world, PlayerEntity player, CallbackInfo info) {
-        if (!world.isClient() && !stack.isEmpty() && ConfigInit.CONFIG.craftingModifier) {
+        if (!world.isClient() && !stack.isEmpty() && Tierify.CONFIG.craftingModifier) {
             ModifierUtils.setItemStackAttribute(player, stack, false);
         }
     }

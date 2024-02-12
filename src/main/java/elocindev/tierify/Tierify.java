@@ -1,6 +1,8 @@
 package elocindev.tierify;
 
 import io.netty.buffer.Unpooled;
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
@@ -29,8 +31,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import draylar.tiered.api.*;
+import elocindev.necronomicon.api.config.v1.NecConfigAPI;
 import elocindev.tierify.command.CommandInit;
-import elocindev.tierify.config.ConfigInit;
+import elocindev.tierify.config.ClientConfig;
+import elocindev.tierify.config.CommonConfig;
+import elocindev.tierify.Tierify;
 import elocindev.tierify.data.AttributeDataLoader;
 import elocindev.tierify.data.ReforgeDataLoader;
 import elocindev.tierify.network.TieredServerPacket;
@@ -41,6 +46,9 @@ import java.util.*;
 
 @SuppressWarnings("unused")
 public class Tierify implements ModInitializer {
+
+    public static CommonConfig CONFIG = new CommonConfig();
+    public static ClientConfig CLIENT_CONFIG = new ClientConfig();
 
     public static final boolean isLevelZLoaded = FabricLoader.getInstance().isModLoaded("levelz");
 
@@ -78,7 +86,13 @@ public class Tierify implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ConfigInit.init();
+        
+        NecConfigAPI.registerConfig(CommonConfig.class);
+        AutoConfig.register(ClientConfig.class, JanksonConfigSerializer::new);
+
+        CONFIG = CommonConfig.INSTANCE;
+        CLIENT_CONFIG = AutoConfig.getConfigHolder(ClientConfig.class).getConfig();
+
         TieredItemTags.init();
         ItemRegistry.init();
         CustomEntityAttributes.init();

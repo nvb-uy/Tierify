@@ -6,8 +6,6 @@ import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 
 import draylar.tiered.api.PotentialAttribute;
 import elocindev.tierify.Tierify;
-import elocindev.tierify.config.ClientConfig;
-import elocindev.tierify.config.ConfigInit;
 import elocindev.tierify.util.TieredTooltip;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -200,7 +198,7 @@ public abstract class ItemStackClientMixin {
             if (potentialAttribute != null) {
                 MutableText text = Text.translatable(potentialAttribute.getID() + ".label");
 
-                if (ConfigInit.CLIENT_CONFIG.showPlatesOnName) {
+                if (Tierify.CLIENT_CONFIG.showPlatesOnName) {
                     text = Text.literal(TieredTooltip.getPlateForModifier(text.getString()));
                 }
 

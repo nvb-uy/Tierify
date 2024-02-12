@@ -19,7 +19,6 @@ import java.util.Random;
 import org.jetbrains.annotations.Nullable;
 
 import elocindev.tierify.Tierify;
-import elocindev.tierify.config.ConfigInit;
 
 public class ModifierUtils {
 
@@ -52,7 +51,7 @@ public class ModifierUtils {
             int maxWeight = attributeWeights.get(attributeWeights.size() - 1);
             for (int i = 0; i < attributeWeights.size(); i++) {
                 if (attributeWeights.get(i) > maxWeight / 2) {
-                    attributeWeights.set(i, (int) (attributeWeights.get(i) * ConfigInit.CONFIG.reforgeModifier));
+                    attributeWeights.set(i, (int) (attributeWeights.get(i) * Tierify.CONFIG.reforgeModifier));
                 }
             }
         }
@@ -62,7 +61,7 @@ public class ModifierUtils {
             for (int i = 0; i < attributeWeights.size(); i++) {
                 if (attributeWeights.get(i) > newMaxWeight / 3) {
                     attributeWeights.set(i, (int) (attributeWeights.get(i)
-                            * (1.0f - ConfigInit.CONFIG.levelzReforgeModifier * ((PlayerStatsManagerAccess) playerEntity).getPlayerStatsManager().getSkillLevel(Skill.SMITHING))));
+                            * (1.0f - Tierify.CONFIG.levelzReforgeModifier * ((PlayerStatsManagerAccess) playerEntity).getPlayerStatsManager().getSkillLevel(Skill.SMITHING))));
                 }
             }
         }
@@ -71,7 +70,7 @@ public class ModifierUtils {
             int luckMaxWeight = Collections.max(attributeWeights);
             for (int i = 0; i < attributeWeights.size(); i++) {
                 if (attributeWeights.get(i) > luckMaxWeight / 3) {
-                    attributeWeights.set(i, (int) (attributeWeights.get(i) * (1.0f - ConfigInit.CONFIG.luckReforgeModifier * playerEntity.getLuck())));
+                    attributeWeights.set(i, (int) (attributeWeights.get(i) * (1.0f - Tierify.CONFIG.luckReforgeModifier * playerEntity.getLuck())));
                 }
             }
         }
@@ -209,11 +208,11 @@ public class ModifierUtils {
             List<String> qualities = null;
 
             if (reforgeMaterial.isIn(TieredItemTags.TIER_1_ITEM)) {
-                qualities = ConfigInit.CONFIG.tier_1_qualities;
+                qualities = Tierify.CONFIG.tier_1_qualities;
             } else if (reforgeMaterial.isIn(TieredItemTags.TIER_2_ITEM)) {
-                qualities = ConfigInit.CONFIG.tier_2_qualities;
+                qualities = Tierify.CONFIG.tier_2_qualities;
             } else if (reforgeMaterial.isIn(TieredItemTags.TIER_3_ITEM)) {
-                qualities = ConfigInit.CONFIG.tier_3_qualities;
+                qualities = Tierify.CONFIG.tier_3_qualities;
             }
 
             if (qualities != null) {

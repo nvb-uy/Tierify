@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import draylar.tiered.api.ModifierUtils;
-import elocindev.tierify.config.ConfigInit;
+import elocindev.tierify.Tierify;
 import net.minecraft.entity.EntityData;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.SpawnReason;
@@ -24,7 +24,7 @@ public class MobEntityMixin {
     @Inject(method = "initialize", at = @At("TAIL"))
     private void initializeMixin(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason spawnReason, @Nullable EntityData entityData, @Nullable NbtCompound entityNbt,
             CallbackInfoReturnable<EntityData> info) {
-        if (ConfigInit.CONFIG.entityItemModifier) {
+        if (Tierify.CONFIG.entityItemModifier) {
             for (EquipmentSlot equipmentSlot : EquipmentSlot.values()) {
                 ItemStack itemStack = this.getEquippedStack(equipmentSlot);
                 if (itemStack.isEmpty()) {

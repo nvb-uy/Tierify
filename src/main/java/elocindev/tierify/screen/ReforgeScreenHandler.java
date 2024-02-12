@@ -96,7 +96,7 @@ public class ReforgeScreenHandler extends ScreenHandler {
         } else {
             this.reforgeReady = false;
         }
-        // if (this.reforgeReady && !ConfigInit.CONFIG.uniqueReforge && ModifierUtils.getAttributeID(this.getSlot(1).getStack()) != null
+        // if (this.reforgeReady && !Tierify.CONFIG.uniqueReforge && ModifierUtils.getAttributeID(this.getSlot(1).getStack()) != null
         //         && ModifierUtils.getAttributeID(this.getSlot(1).getStack()).getPath().contains("unique")) {
         //     this.reforgeReady = false;
         // }

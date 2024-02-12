@@ -5,7 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 import draylar.tiered.api.ModifierUtils;
-import elocindev.tierify.config.ConfigInit;
+import elocindev.tierify.Tierify;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.MerchantScreenHandler;
 import net.minecraft.screen.ScreenHandler;
@@ -20,7 +20,7 @@ public abstract class MerchantScreenHandlerMixin extends ScreenHandler {
 
     @ModifyVariable(method = "quickMove", at = @At(value = "INVOKE", target = "Lnet/minecraft/screen/MerchantScreenHandler;insertItem(Lnet/minecraft/item/ItemStack;IIZ)Z", ordinal = 0), ordinal = 1)
     private ItemStack quickMoveMixin(ItemStack original) {
-        if (ConfigInit.CONFIG.merchantModifier) {
+        if (Tierify.CONFIG.merchantModifier) {
             ModifierUtils.setItemStackAttribute(null, original, false);
         }
         return original;

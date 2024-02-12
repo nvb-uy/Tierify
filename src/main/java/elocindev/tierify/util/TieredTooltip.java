@@ -5,7 +5,7 @@ import java.util.List;
 import org.joml.Vector2ic;
 
 import draylar.tiered.api.BorderTemplate;
-import elocindev.tierify.config.ConfigInit;
+import elocindev.tierify.Tierify;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.font.TextRenderer;
@@ -81,7 +81,7 @@ public class TieredTooltip {
         for (r = 0; r < components.size(); ++r) {
             int nameCentering = 0;
             tooltipComponent2 = components.get(r);
-            if (r == 0 && ConfigInit.CLIENT_CONFIG.centerName)
+            if (r == 0 && Tierify.CLIENT_CONFIG.centerName)
                 nameCentering = i / 2 - tooltipComponent2.getWidth(textRenderer) / 2;
 
             tooltipComponent2.drawText(textRenderer, n + nameCentering, q, context.getMatrices().peek().getPositionMatrix(), context.getVertexConsumers());

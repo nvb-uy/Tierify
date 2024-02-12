@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import draylar.tiered.api.ModifierUtils;
-import elocindev.tierify.config.ConfigInit;
+import elocindev.tierify.Tierify;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -44,7 +44,7 @@ public abstract class ArmorStandEntityMixin {
 
     @Inject(method = "equipStack", at = @At("HEAD"))
     private void equipStackMixin(EquipmentSlot slot, ItemStack stack, CallbackInfo info) {
-        if (!this.isClient && this.isGenerated && ConfigInit.CONFIG.lootContainerModifier) {
+        if (!this.isClient && this.isGenerated && Tierify.CONFIG.lootContainerModifier) {
             ModifierUtils.setItemStackAttribute(null, stack, false);
         }
     }

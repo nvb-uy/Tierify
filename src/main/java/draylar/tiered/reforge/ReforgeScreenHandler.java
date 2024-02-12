@@ -173,7 +173,7 @@ public class ReforgeScreenHandler extends ScreenHandler {
     public void reforge() {
         ItemStack itemStack = this.getSlot(1).getStack();
         ModifierUtils.removeItemStackAttribute(itemStack);
-        ModifierUtils.setItemStackAttribute(player, itemStack, true);
+        ModifierUtils.setItemStackAttribute(player, itemStack, true, this.getSlot(2).getStack());
 
         this.decrementStack(0);
         this.decrementStack(2);

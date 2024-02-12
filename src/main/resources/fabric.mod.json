@@ -36,6 +36,6 @@
     "fabric-api": ">=${fabric_version}",
     "fabricloader": ">=${loader_version}",
     "cloth-config2": ">=${cloth_config_version}",
-    "necronomicon": ">=${necronomicon_version}"
+    "necronomicon": ">=1.4.2"
   }
 }

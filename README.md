@@ -1,16 +1,32 @@
 # Tierify
 
-**Tierify** is a flavor of **Tiered** made with the purpose of fit my personal vision, and to fix some issues it had. It is a fork of **TieredZ** by **Globox_Z**, which is an MIT licensed **Tiered** fork.
+**Tierify** is a flavor of **Tiered** made with the purpose of fitting my own personal vision, and to fix some issues it had. It is a fork of **TieredZ** by **Globox_Z**, which is an MIT licensed **Tiered** fork.
 
 The original mod, Tiered, is inspired by [Quality Tools](https://www.curseforge.com/minecraft/mc-mods/quality-tools). Every tool you make will have a special modifier, as seen below:
 
 <img src="resources/legendary_chestplate.png" width="400">
 
-### Differences from Tiered
+### Differences
 Tierify expands upon Tiered by changing various things, but keeps its mod id and API packages the same, to make it compatible with preexisting addons.
 
+- **Mythic Quality**
+  
+  The "Unique" quality was replaced with a red-themed Mythic quality.
+- **Plates**
+  
+  Qualities may now be displayed with plates, this is a clientside feature and is configurable, comes enabled by default.
+  
+- **Reforging Tiers**
+  Reforging doesn't require Amethyst anymore, now instead it uses 3 new ores obtainable
+  - **Tier 1:** Limestone (Overworld)
+    Allows reforging tools to Common, Uncommon and Rare qualities.
+  - **Tier 2:** Pyrite (Nether)
+    Allows reforging tools to Uncommon, Rare, Epic and Legendary qualities.
+  - **Tier 3:** Galena (End)
+    Allows reforging tools to Rare, Epic, Legendary and Mythic qualities.
+
 ### Installation
-Tierify is a mod built for the [Fabric Loader](https://fabricmc.net/). It requires [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) (and [Synitra Connector](https://www.curseforge.com/minecraft/mc-mods/sinytra-connector) if on Forge/NeoForge) to be installed separately; all other dependencies are included inside the mod.
+Tierify is a mod built for the [Fabric Loader](https://fabricmc.net/). It requires [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) & [Necronomicon API](https://www.curseforge.com/minecraft/mc-mods/necronomicon) (and [Synitra Connector](https://www.curseforge.com/minecraft/mc-mods/sinytra-connector) if on Forge/NeoForge) to be installed separately; all other dependencies are included inside the mod.
 
 ### Customization
 
@@ -117,7 +133,7 @@ Example:
 #### Reforge
 
 Reforging items to get other tiers can be done at the anvil. There is a slot which is called "base" on the left and a slot called "addition" on the right.
-The addition slot can only contain items which are stated in the `tiered:reforge_addition` item tag. The base slot can contain the reforging item material item if existent, otherwise it can only contain `tiered:reforge_base_item` tag items. The base slot item can get changed via datapack, an example can be found below and has to get put in the `tiered:reforge_items` folder.
+The addition slot can only contain items which are stated in each tier item tag (`tiered:reforge_tier_1`, `tiered:reforge_tier_2`, `tiered:reforge_tier_3`). The base slot can contain the reforging item material item if existent, otherwise it can only contain `tiered:reforge_base_item` tag items. The base slot item can get changed via datapack, an example can be found below and has to get put in the `tiered:reforge_items` folder.
 
 ```json
 {
@@ -135,4 +151,5 @@ The addition slot can only contain items which are stated in the `tiered:reforge
 - **Globox_Z** for making **TieredZ**, a fork of Tiered which Tierify is based upon.
 
 ### License
-Tierify is licensed under MIT. You are free to use the code inside this repo as you want as long as you meet the license's conditions.
+Tierify's code is licensed under MIT. You are free to use the code inside this repo as you want as long as you meet the license's conditions.
+Newer assets (Such as Limestone, Pyrite and Galena ores) are All Rights Reserved, and you may not use them without explicit permission.

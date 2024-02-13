@@ -10,9 +10,12 @@ The original mod, Tiered, is inspired by [Quality Tools](https://www.curseforge.
 Tierify expands upon Tiered by changing various things, but keeps its mod id and API packages the same, to make it compatible with preexisting addons.
 
 - **Mythic Quality**
+  
   The "Unique" quality was replaced with a red-themed Mythic quality.
 - **Plates**
+  
   Qualities may now be displayed with plates, this is a clientside feature and is configurable, comes enabled by default.
+  
 - **Reforging Tiers**
   Reforging doesn't require Amethyst anymore, now instead it uses 3 new ores obtainable
   - **Tier 1:** Limestone (Overworld)

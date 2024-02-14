@@ -17,19 +17,21 @@ import net.minecraft.client.gui.tooltip.TooltipPositioner;
 public class TieredTooltip {
 
     public static String getPlateForModifier(String modifier) {
+        // The first string that gets added is the item border color, it might seem useless because it gets reset right afterwards, but the item borders mod doesn't have a data driven api and this is the only way for now according to the dev
+
         switch(modifier.toLowerCase()) {
             case "common":
-                return "\u00A7F\uFFA1\u00A7r";
+                return "\u00A77\u00A7r"+"\u00A7F\uFFA1\u00A7r";
             case "uncommon":
-                return "\u00A7F\uFFA2\u00A7r";
+                return "\u00A72\u00A7r"+"\u00A7F\uFFA2\u00A7r";
             case "rare":
-                return "\u00A7F\uFFA3\u00A7r";
+                return "\u00A73\u00A7r"+"\u00A7F\uFFA3\u00A7r";
             case "epic":
-                return "\u00A7F\uFFA4\u00A7r";
+                return "\u00A75\u00A7r"+"\u00A7F\uFFA4\u00A7r";
             case "legendary":
-                return "\u00A7F\uFFA5\u00A7r";
+                return "\u00A76\u00A7r"+"\u00A7F\uFFA5\u00A7r";
             case "mythic":
-                return "\u00A7F\uFFA6\u00A7r";
+                return "\u00A74\u00A7r"+"\u00A7F\uFFA6\u00A7r";
             default:
                 return modifier;
         }

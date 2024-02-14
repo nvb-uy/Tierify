@@ -19,6 +19,7 @@ import java.util.Random;
 import org.jetbrains.annotations.Nullable;
 
 import elocindev.tierify.Tierify;
+import elocindev.tierify.compat.ItemBordersCompat;
 
 public class ModifierUtils {
 
@@ -161,6 +162,9 @@ public class ModifierUtils {
 
             stack.getOrCreateSubNbt(Tierify.NBT_SUBTAG_KEY).putString(Tierify.NBT_SUBTAG_DATA_KEY, potentialAttributeID.toString());
 
+            stack.getOrCreateSubNbt("itemborders_colors").putString("top", ItemBordersCompat.getColorForIdentifier(potentialAttributeID));
+            stack.getOrCreateSubNbt("itemborders_colors").putString("bottom", ItemBordersCompat.getColorForIdentifier(potentialAttributeID));
+
             HashMap<String, Object> nbtMap = Tierify.ATTRIBUTE_DATA_LOADER.getItemAttributes().get(new Identifier(potentialAttributeID.toString())).getNbtValues();
 
             // add durability nbt
@@ -196,7 +200,9 @@ public class ModifierUtils {
                             nbtCompound.putDouble(key, Math.round((double) value * 100.0) / 100.0);
                         }
                     }
+
                 }
+
                 stack.setNbt(nbtCompound);
             }
         }

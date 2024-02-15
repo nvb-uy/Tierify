@@ -39,6 +39,9 @@
   "tiered:common_elytra_3.label": "Common",
   "tiered:common_elytra_4.label": "Common",
 
+  "tiered:common_staffwand_1.label": "Common",
+  "tiered:common_staffwand_2.label": "Common",
+
   "tiered:uncommon_armor_1.label": "Uncommon",
   "tiered:uncommon_armor_2.label": "Uncommon",
   "tiered:uncommon_armor_3.label": "Uncommon",
@@ -73,6 +76,9 @@
   "tiered:uncommon_elytra_2.label": "Uncommon",
   "tiered:uncommon_elytra_3.label": "Uncommon",
   "tiered:uncommon_elytra_4.label": "Uncommon",
+
+  "tiered:uncommon_staffwand_1.label": "Uncommon",
+  "tiered:uncommon_staffwand_2.label": "Uncommon",  
 
   "tiered:rare_armor_1.label": "Rare",
   "tiered:rare_armor_2.label": "Rare",
@@ -109,6 +115,9 @@
   "tiered:rare_elytra_3.label": "Rare",
   "tiered:rare_elytra_4.label": "Rare",
 
+  "tiered:rare_staffwand_1.label": "Rare",
+  "tiered:rare_staffwand_2.label": "Rare",  
+
   "tiered:epic_armor_1.label": "Epic",
   "tiered:epic_armor_2.label": "Epic",
   "tiered:epic_armor_3.label": "Epic",
@@ -143,6 +152,9 @@
   "tiered:epic_elytra_2.label": "Epic",
   "tiered:epic_elytra_3.label": "Epic",
   "tiered:epic_elytra_4.label": "Epic",
+
+  "tiered:epic_staffwand_1.label": "Epic",
+  "tiered:epic_staffwand_2.label": "Epic",  
 
   "tiered:legendary_armor_1.label": "Legendary",
   "tiered:legendary_armor_2.label": "Legendary",
@@ -179,6 +191,9 @@
   "tiered:legendary_elytra_3.label": "Legendary",
   "tiered:legendary_elytra_4.label": "Legendary",
 
+  "tiered:legendary_staffwand_1.label": "Legendary",
+  "tiered:legendary_staffwand_2.label": "Legendary",
+
   "tiered:mythic_armor_1.label": "Mythic",
   "tiered:mythic_armor_2.label": "Mythic",
   "tiered:mythic_armor_3.label": "Mythic",
@@ -213,6 +228,9 @@
   "tiered:mythic_elytra_2.label": "Mythic",
   "tiered:mythic_elytra_3.label": "Mythic",
   "tiered:mythic_elytra_4.label": "Mythic",
+
+  "tiered:mythic_staffwand_1.label": "Mythic",
+  "tiered:mythic_staffwand_2.label": "Mythic",
 
   "tiered:common.label": "Common",
   "tiered:uncommon.label": "Uncommon",

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "$#",
+        "#$"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:popped_chorus_fruit"
+        },
+        "$": {
+            "item": "minecraft:end_stone"
+        }
+    },
+    "result": {
+        "item": "tiered:galena_chunk",
+        "count": 1
+    }
+}

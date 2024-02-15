@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "tiered:galena"
+        "tiered:galena_chunk"
     ]
 }

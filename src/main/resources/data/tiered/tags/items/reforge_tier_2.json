@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "tiered:pyrite"
+        "tiered:pyrite_chunk"
     ]
 }

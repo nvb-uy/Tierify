@@ -8,8 +8,8 @@ import net.minecraft.registry.Registry;
 public class ItemRegistry {
     
     public static final Item LIMESTONE_CHUNK = register(new Item(new Item.Settings()), "limestone_chunk");
-    public static final Item RAW_PYRITE = register(new Item(new Item.Settings()), "pyrite");
-    public static final Item RAW_GALENA = register(new Item(new Item.Settings()), "galena");
+    public static final Item RAW_PYRITE = register(new Item(new Item.Settings()), "pyrite_chunk");
+    public static final Item RAW_GALENA = register(new Item(new Item.Settings()), "galena_chunk");
 
     public static void init() {}
 

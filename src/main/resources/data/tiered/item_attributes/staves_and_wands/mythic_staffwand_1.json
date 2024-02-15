@@ -16,7 +16,7 @@
     ],
     "weight": 3,
     "style": {
-        "color": "gold"
+        "color": "red"
     },
     "attributes": [
         {
@@ -24,7 +24,7 @@
             "modifier": {
                 "name": "tiered:mythic_staffwand_1",
                 "operation": "MULTIPLY_TOTAL",
-                "amount": 0.010
+                "amount": 0.10
             },
             "optional_equipment_slots": [
                 "MAINHAND",

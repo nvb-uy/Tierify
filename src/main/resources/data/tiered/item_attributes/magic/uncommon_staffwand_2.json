@@ -1,0 +1,59 @@
+{
+    "id": "tiered:uncommon_staffwand_2",
+    "verifiers": [
+        {
+            "tag": "wizards:staves"
+        },
+        {
+            "tag": "wizards:wands"
+        },
+        {
+            "tag": "paladins:staves"
+        },
+        {
+            "tag": "paladins:wands"
+        }
+    ],
+    "weight": 35,
+    "style": {
+        "color": "dark_green"
+    },
+    "attributes": [
+        {
+            "type": "spell_power:haste",
+            "modifier": {
+                "name": "tiered:uncommon_staffwand_2",
+                "operation": "MULTIPLY_TOTAL",
+                "amount": -0.05
+            },
+            "optional_equipment_slots": [
+                "MAINHAND",
+                "OFFHAND"
+            ]
+        },
+        {
+            "type": "spell_power:critical_chance",
+            "modifier": {
+                "name": "tiered:uncommon_staffwand_2",
+                "operation": "MULTIPLY_TOTAL",
+                "amount": 0.035
+            },
+            "optional_equipment_slots": [
+                "MAINHAND",
+                "OFFHAND"
+            ]
+        },
+        {
+            "type": "tiered:generic.durable",
+            "modifier": {
+                "name": "tiered:uncommon_staffwand_2",
+                "operation": "MULTIPLY_TOTAL",
+                "amount": -0.1
+            },
+            "optional_equipment_slots": [
+                "MAINHAND",
+                "OFFHAND"
+            ]
+        }
+    ]
+}

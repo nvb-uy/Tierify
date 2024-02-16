@@ -1,0 +1,32 @@
+{
+  "reforge_sound_common": {
+    "sounds": [
+      "tiered:reforge_sound_common"
+    ]
+  },
+  "reforge_sound_uncommon": {
+    "sounds": [
+      "tiered:reforge_sound_uncommon"
+    ]
+  },
+  "reforge_sound_rare": {
+    "sounds": [
+      "tiered:reforge_sound_rare"
+    ]
+  },
+  "reforge_sound_epic": {
+    "sounds": [
+      "tiered:reforge_sound_epic"
+    ]
+  },
+  "reforge_sound_legendary": {
+    "sounds": [
+      "tiered:reforge_sound_legendary"
+    ]
+  },
+  "reforge_sound_mythic": {
+    "sounds": [
+      "tiered:reforge_sound_mythic"
+    ]
+  }
+}

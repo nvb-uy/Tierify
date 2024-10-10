@@ -1,5 +1,6 @@
 package elocindev.tierify;
 
+import elocindev.tierify.registry.SoundRegistry;
 import io.netty.buffer.Unpooled;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
@@ -103,6 +104,7 @@ public class Tierify implements ModInitializer {
         CommandInit.init();
         registerAttributeSyncer();
         registerReforgeItemSyncer();
+        SoundRegistry.registerSounds();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tierify.ATTRIBUTE_DATA_LOADER);
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tierify.REFORGE_DATA_LOADER);
 

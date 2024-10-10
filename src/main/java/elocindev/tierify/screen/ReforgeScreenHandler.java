@@ -8,11 +8,17 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
+import net.minecraft.registry.Registries;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
 
 import java.util.List;
@@ -175,6 +181,15 @@ public class ReforgeScreenHandler extends ScreenHandler {
         ModifierUtils.removeItemStackAttribute(itemStack);
         ModifierUtils.setItemStackAttribute(player, itemStack, true, this.getSlot(2).getStack());
 
+        if (Registries.SOUND_EVENT.get(getReforgeSound(ModifierUtils.getAttributeID(itemStack))) !=null) {
+            SoundEvent soundEvent = Registries.SOUND_EVENT.get(getReforgeSound(ModifierUtils.getAttributeID(itemStack)));
+            this.context.run((world, pos) -> {
+                if (!world.isClient) {
+                    world.playSound(null, pos, soundEvent, SoundCategory.BLOCKS, 1f, 1f);
+                }
+            });
+        }
+
         this.decrementStack(0);
         this.decrementStack(2);
         this.context.run((world, pos) -> world.syncWorldEvent(WorldEvents.ANVIL_USED, (BlockPos) pos, 0));
@@ -202,4 +217,18 @@ public class ReforgeScreenHandler extends ScreenHandler {
     public static boolean isValidAddition(ItemStack stack) {
         return stack.isIn(TieredItemTags.TIER_1_ITEM) || stack.isIn(TieredItemTags.TIER_2_ITEM) || stack.isIn(TieredItemTags.TIER_3_ITEM);
     }
+
+    public static Identifier getReforgeSound(Identifier identifier) {
+        // plays the corresponding upgrade sound effect for the item tier
+        String tier = Tierify.ATTRIBUTE_DATA_LOADER.getItemAttributes().get(identifier).getID();
+        if (tier == null) return null;
+        String soundId = null;
+
+        String tierName = Text.translatable(tier + ".label").getString().toLowerCase();
+        soundId = "reforge_sound_"+tierName;
+
+        return new Identifier("tiered",soundId);
+    }
+
+
 }

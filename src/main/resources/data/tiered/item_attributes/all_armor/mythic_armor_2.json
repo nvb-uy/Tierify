@@ -34,25 +34,11 @@
             ]
         },
         {
-            "type": "generic.max_health",
-            "modifier": {
-                "name": "tiered:mythic_armor_2",
-                "operation": "ADDITION",
-                "amount": 6
-            },
-            "optional_equipment_slots": [
-                "FEET",
-                "LEGS",
-                "CHEST",
-                "HEAD"
-            ]
-        },
-        {
             "type": "generic.movement_speed",
             "modifier": {
                 "name": "tiered:mythic_armor_2",
-                "operation": "MULTIPLY_TOTAL",
-                "amount": 0.1
+                "operation": "MULTIPLY_BASE",
+                "amount": 0.05
             },
             "optional_equipment_slots": [
                 "FEET",

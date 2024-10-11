@@ -34,25 +34,11 @@
             ]
         },
         {
-            "type": "generic.max_health",
-            "modifier": {
-                "name": "tiered:legendary_armor_3",
-                "operation": "ADDITION",
-                "amount": 2
-            },
-            "optional_equipment_slots": [
-                "FEET",
-                "LEGS",
-                "CHEST",
-                "HEAD"
-            ]
-        },
-        {
             "type": "generic.movement_speed",
             "modifier": {
                 "name": "tiered:legendary_armor_3",
-                "operation": "MULTIPLY_TOTAL",
-                "amount": 0.1
+                "operation": "MULTIPLY_BASE",
+                "amount": 0.05
             },
             "optional_equipment_slots": [
                 "FEET",

@@ -25,7 +25,7 @@
             "type": "generic.movement_speed",
             "modifier": {
                 "name": "tiered:mythic_elytra_1",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": 0.1
             },
             "optional_equipment_slots": [

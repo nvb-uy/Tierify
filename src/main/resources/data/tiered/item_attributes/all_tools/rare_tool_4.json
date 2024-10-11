@@ -23,7 +23,7 @@
             "type": "tiered:generic.dig_speed",
             "modifier": {
                 "name": "tiered:rare_tool_4",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": 0.05
             },
             "optional_equipment_slots": [

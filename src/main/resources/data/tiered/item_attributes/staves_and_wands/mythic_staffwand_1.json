@@ -23,7 +23,7 @@
             "type": "spell_power:critical_damage",
             "modifier": {
                 "name": "tiered:mythic_staffwand_1",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": 0.10
             },
             "optional_equipment_slots": [
@@ -35,7 +35,7 @@
             "type": "spell_power:critical_chance",
             "modifier": {
                 "name": "tiered:mythic_staffwand_1",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": 0.15
             },
             "optional_equipment_slots": [

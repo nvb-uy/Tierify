@@ -23,7 +23,7 @@
             "type": "tiered:generic.durable",
             "modifier": {
                 "name": "tiered:legendary_tool_1",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": 0.3
             },
             "optional_equipment_slots": [
@@ -34,7 +34,7 @@
             "type": "generic.movement_speed",
             "modifier": {
                 "name": "tiered:legendary_tool_1",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": 0.05
             },
             "optional_equipment_slots": [

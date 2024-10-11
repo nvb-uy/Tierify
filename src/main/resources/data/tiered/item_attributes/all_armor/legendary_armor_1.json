@@ -46,20 +46,6 @@
                 "CHEST",
                 "HEAD"
             ]
-        },
-        {
-            "type": "generic.max_health",
-            "modifier": {
-                "name": "tiered:legendary_armor_1",
-                "operation": "ADDITION",
-                "amount": 4
-            },
-            "optional_equipment_slots": [
-                "FEET",
-                "LEGS",
-                "CHEST",
-                "HEAD"
-            ]
         }
     ]
 }

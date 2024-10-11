@@ -26,7 +26,7 @@
             "type": "tiered:generic.durable",
             "modifier": {
                 "name": "tiered:uncommon_shield_1",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": -0.1
             },
             "optional_equipment_slots": [

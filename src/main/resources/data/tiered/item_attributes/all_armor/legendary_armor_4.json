@@ -20,20 +20,6 @@
     },
     "attributes": [
         {
-            "type": "generic.max_health",
-            "modifier": {
-                "name": "tiered:legendary_armor_4",
-                "operation": "ADDITION",
-                "amount": 4
-            },
-            "optional_equipment_slots": [
-                "FEET",
-                "LEGS",
-                "CHEST",
-                "HEAD"
-            ]
-        },
-        {
             "type": "generic.armor_toughness",
             "modifier": {
                 "name": "tiered:legendary_armor_4",
@@ -51,7 +37,7 @@
             "type": "tiered:generic.durable",
             "modifier": {
                 "name": "tiered:legendary_armor_4",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": 0.3
             },
             "optional_equipment_slots": [

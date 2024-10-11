@@ -26,7 +26,7 @@
             "type": "tiered:generic.durable",
             "modifier": {
                 "name": "tiered:mythic_shield_3",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": 0.5
             },
             "optional_equipment_slots": [
@@ -38,7 +38,7 @@
             "type": "generic.movement_speed",
             "modifier": {
                 "name": "tiered:mythic_shield_3",
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "amount": 0.1
             },
             "optional_equipment_slots": [

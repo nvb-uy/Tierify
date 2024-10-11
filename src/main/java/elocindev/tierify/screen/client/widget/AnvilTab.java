@@ -2,7 +2,6 @@ package elocindev.tierify.screen.client.widget;
 
 import org.jetbrains.annotations.Nullable;
 
-import elocindev.tierify.TierifyClient;
 import elocindev.tierify.network.TieredClientPacket;
 import net.libz.api.InventoryTab;
 import net.minecraft.client.MinecraftClient;

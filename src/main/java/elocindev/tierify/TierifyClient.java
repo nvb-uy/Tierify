@@ -40,9 +40,7 @@ public class TierifyClient implements ClientModInitializer {
 
     private static final Identifier ANVIL_TAB_ICON = new Identifier("tiered:textures/gui/anvil_tab_icon.png");
     private static final Identifier REFORGE_TAB_ICON = new Identifier("tiered:textures/gui/reforge_tab_icon.png");
-
-    public static final boolean isBCLibLoaded = FabricLoader.getInstance().isModLoaded("bclib");
-
+    
     @Override
     public void onInitializeClient() {
         registerAttributeSyncHandler();

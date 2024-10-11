@@ -17,9 +17,7 @@ public class AnvilTab extends InventoryTab {
 
     @Override
     public void onClick(MinecraftClient client) {
-        if (!TierifyClient.isBCLibLoaded) {
-            TieredClientPacket.writeC2SScreenPacket((int) client.mouse.getX(), (int) client.mouse.getY(), false);
-        }
+        TieredClientPacket.writeC2SScreenPacket((int) client.mouse.getX(), (int) client.mouse.getY(), false);
     }
 
 }

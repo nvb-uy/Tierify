@@ -1,0 +1,6 @@
+CODE is referenced as files inside the src/main/java directory.
+
+The following files are marked as All Rights Reserved:
+src/main/resources/tiered/item/*
+
+Other files are licensed under the same license as the code.

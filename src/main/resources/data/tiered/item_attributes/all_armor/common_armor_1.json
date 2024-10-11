@@ -24,7 +24,7 @@
             "modifier": {
                 "name": "tiered:common_armor_1",
                 "operation": "MULTIPLY_TOTAL",
-                "amount": -0.3
+                "amount": -0.05
             },
             "optional_equipment_slots": [
                 "FEET",

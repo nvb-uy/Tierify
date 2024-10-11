@@ -15,7 +15,7 @@
       "modifier": {
         "name": "tiered:common_elytra_1",
         "operation": "MULTIPLY_TOTAL",
-        "amount": -0.3
+        "amount": -0.05
       },
       "optional_equipment_slots": [
         "CHEST"

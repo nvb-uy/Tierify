@@ -15,7 +15,7 @@
             "modifier": {
                 "name": "tiered:common_melee_4",
                 "operation": "MULTIPLY_TOTAL",
-                "amount": -0.3
+                "amount": -0.05
             },
             "optional_equipment_slots": [
                 "MAINHAND"
@@ -26,7 +26,7 @@
             "modifier": {
                 "name": "tiered:common_melee_4",
                 "operation": "MULTIPLY_TOTAL",
-                "amount": -0.3
+                "amount": -0.05
             },
             "optional_equipment_slots": [
                 "MAINHAND"

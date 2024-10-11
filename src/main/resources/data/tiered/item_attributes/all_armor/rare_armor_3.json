@@ -34,20 +34,6 @@
             ]
         },
         {
-            "type": "generic.max_health",
-            "modifier": {
-                "name": "tiered:rare_armor_3",
-                "operation": "ADDITION",
-                "amount": -1
-            },
-            "optional_equipment_slots": [
-                "FEET",
-                "LEGS",
-                "CHEST",
-                "HEAD"
-            ]
-        },
-        {
             "type": "generic.movement_speed",
             "modifier": {
                 "name": "tiered:rare_armor_3",

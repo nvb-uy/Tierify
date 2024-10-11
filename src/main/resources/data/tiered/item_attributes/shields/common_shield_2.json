@@ -15,19 +15,7 @@
             "modifier": {
                 "name": "tiered:common_shield_2",
                 "operation": "MULTIPLY_TOTAL",
-                "amount": -0.3
-            },
-            "optional_equipment_slots": [
-                "MAINHAND",
-                "OFFHAND"
-            ]
-        },
-        {
-            "type": "generic.max_health",
-            "modifier": {
-                "name": "tiered:common_shield_2",
-                "operation": "ADDITION",
-                "amount": -4
+                "amount": -0.05
             },
             "optional_equipment_slots": [
                 "MAINHAND",
@@ -39,7 +27,7 @@
             "modifier": {
                 "name": "tiered:common_shield_2",
                 "operation": "MULTIPLY_TOTAL",
-                "amount": -0.2
+                "amount": -0.035
             },
             "optional_equipment_slots": [
                 "MAINHAND",

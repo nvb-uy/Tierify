@@ -24,30 +24,6 @@
                 "MAINHAND",
                 "OFFHAND"
             ]
-        },
-        {
-            "type": "tiered:generic.durable",
-            "modifier": {
-                "name": "tiered:rare_ranged_3",
-                "operation": "MULTIPLY_TOTAL",
-                "amount": -0.05
-            },
-            "optional_equipment_slots": [
-                "MAINHAND",
-                "OFFHAND"
-            ]
-        },
-        {
-            "type": "generic.movement_speed",
-            "modifier": {
-                "name": "tiered:rare_ranged_3",
-                "operation": "MULTIPLY_TOTAL",
-                "amount": -0.05
-            },
-            "optional_equipment_slots": [
-                "MAINHAND",
-                "OFFHAND"
-            ]
         }
     ]
 }

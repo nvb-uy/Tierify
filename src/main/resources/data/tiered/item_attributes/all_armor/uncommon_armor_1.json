@@ -38,7 +38,7 @@
             "modifier": {
                 "name": "tiered:uncommon_armor_1",
                 "operation": "MULTIPLY_TOTAL",
-                "amount": -0.25
+                "amount": -0.0355
             },
             "optional_equipment_slots": [
                 "FEET",

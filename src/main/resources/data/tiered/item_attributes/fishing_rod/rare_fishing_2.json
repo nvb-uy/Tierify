@@ -21,18 +21,6 @@
                 "MAINHAND",
                 "OFFHAND"
             ]
-        },
-        {
-            "type": "generic.luck",
-            "modifier": {
-                "name": "tiered:rare_fishing_2",
-                "operation": "ADDITION",
-                "amount": -0.5
-            },
-            "optional_equipment_slots": [
-                "MAINHAND",
-                "OFFHAND"
-            ]
         }
     ]
 }

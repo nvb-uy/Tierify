@@ -11,22 +11,11 @@
     },
     "attributes": [
         {
-            "type": "generic.max_health",
-            "modifier": {
-                "name": "tiered:rare_elytra_1",
-                "operation": "ADDITION",
-                "amount": -1
-            },
-            "optional_equipment_slots": [
-                "CHEST"
-            ]
-        },
-        {
             "type": "tiered:generic.durable",
             "modifier": {
                 "name": "tiered:rare_elytra_1",
                 "operation": "MULTIPLY_TOTAL",
-                "amount": -0.2
+                "amount": 0.035
             },
             "optional_equipment_slots": [
                 "CHEST"

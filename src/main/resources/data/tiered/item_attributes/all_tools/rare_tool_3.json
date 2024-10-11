@@ -35,7 +35,7 @@
             "modifier": {
                 "name": "tiered:rare_tool_3",
                 "operation": "MULTIPLY_TOTAL",
-                "amount": -0.05
+                "amount": 0.035
             },
             "optional_equipment_slots": [
                 "MAINHAND"
